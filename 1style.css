@@ -1,0 +1,62 @@
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        
+        .contenedor-principal {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .contenedor {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        
+        .contenedor.reverso {
+            flex-direction: row-reverse;
+        }
+        
+        .contenedor img {
+            width: 40%;
+            max-width: 380px;
+            border-radius: 8px;
+            margin: 0 15px;
+        }
+        
+        .texto {
+            width: 60%;
+        }
+        
+        .precio {
+            color: red;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .contenedor, .contenedor.reverso {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .contenedor img {
+                width: 80%;
+                margin: 15px 0;
+            }
+            
+            .texto {
+                width: 100%;
+            }
+            .bot-ton {
+                color: purple;
+            }
+        }
